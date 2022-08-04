@@ -64,19 +64,22 @@ class AdPopcornOfferwallPlugin : FlutterPlugin, MethodCallHandler, ActivityAware
 
 // 오퍼월 테마 컬러 변경
 
-//    optionMap.put(ApStyleManager.CustomStyle.OFFERWALL_THEME_COLOR, Color.parseColor("#000000"));
-            optionMap.put(ApStyleManager.CustomStyle.OFFERWALL_TITLE_TEXT, "오퍼월임");
+   optionMap.put(ApStyleManager.CustomStyle.OFFERWALL_THEME_COLOR, Color.parseColor("#A061F5"));
+   optionMap.put(ApStyleManager.CustomStyle.TOP_BAR_BG_COLOR, Color.parseColor("#000000"));
+            // optionMap.put(ApStyleManager.CustomStyle.OFFERWALL_TITLE_TEXT, "오퍼월임");
 //            optionMap.put(ApStyleManager.CustomStyle.TOP_BAR_BG_COLOR, 0xffee5555);
 //            optionMap.put(ApStyleManager.CustomStyle.TOP_BAR_TEXT_COLOR, 0xffffffff);
 //            optionMap.put(ApStyleManager.CustomStyle.OFFERWALL_BG_COLOR, 0xff2f3a3e);
 
 
-// 오퍼월 탑바 배경 컬러 변경 optionMap.put(ApStyleManager.CustomData.TOP_BAR_BG_COLOR, 0xffee5555);
+// 오퍼월 탑바 배경 컬러 변경
+//  optionMap.put(ApStyleManager.CustomStyle.TOP_BAR_BG_COLOR, 0xff000000);
 // 오퍼월 탑바 쉐도우 효과 변경 optionMap.put(ApStyleManager.CustomData.TOP_BAR_SHADOW, true);
 // 탑바 닫기 버튼 이미지 변경
 //    optionMap.put(ApStyleManager.CustomStyle.TOP_BAR_CLOSE_BTN_RESOURCE_ID, R.drawable.btn_1depth_close);
+   optionMap.put(ApStyleManager.CustomStyle.OFFERWALL_TITLE_LOGO_RESOURCE_ID, R.drawable.logo);
 // 탑바 커스텀 타이틀 로고 사이즈 설정
-            optionMap[ApStyleManager.CustomStyle.OFFERWALL_TITLE_LOGO_RESOURCE_SIZE] = APSize(100, 100)
+            optionMap[ApStyleManager.CustomStyle.OFFERWALL_TITLE_LOGO_RESOURCE_SIZE] = APSize(100, 20)
             // 세팅된 스타일 옵션 HashMap을 적용
             ApStyleManager.setCustomOfferwallStyle(optionMap)
 
